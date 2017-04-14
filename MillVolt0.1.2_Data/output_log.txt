@@ -1,0 +1,99 @@
+Initialize engine version: 5.4.2f2 (b7e030c65c9b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1ba1)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.069 seconds
+Platform assembly: C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\arcan\Desktop\MillVolt1.2-Officiel\MillVolt0.1.2_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.198123 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 13c4 -> priority: 1 
+  Thread -> id: 1f48 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.652543 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 777.
+Total: 0.429827 ms (FindLiveObjects: 0.029234 ms CreateObjectMapping: 0.022518 ms MarkObjects: 0.168691 ms  DeleteObjects: 0.207802 ms)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 14.249086 ms
+
+Unloading 265 unused Assets to reduce memory usage. Loaded Objects now: 426.
+Total: 7.536987 ms (FindLiveObjects: 0.076641 ms CreateObjectMapping: 0.092444 ms MarkObjects: 0.723753 ms  DeleteObjects: 6.643358 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.180444 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 463.
+Total: 1.090370 ms (FindLiveObjects: 0.056888 ms CreateObjectMapping: 0.052543 ms MarkObjects: 0.331456 ms  DeleteObjects: 0.649086 ms)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+ no particle system found on car to generate smoke particles
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.125728 ms
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 426.
+Total: 4.088888 ms (FindLiveObjects: 0.057679 ms CreateObjectMapping: 0.056493 ms MarkObjects: 0.695308 ms  DeleteObjects: 3.277037 ms)
+

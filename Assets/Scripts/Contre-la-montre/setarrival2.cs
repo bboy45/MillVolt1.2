@@ -14,16 +14,21 @@ public class setarrival2 : MonoBehaviour {
 
 	}*/
 	public void OnTriggerEnter(Collider other){
-		// nbrtour = 9 pour 3 tours
-		// nbrtour = 6 pour 2 tours
-		// nrbtour = 3 pour 1 tour
-		if (nbrtour < 3) {
-			nbrtour += 1;
-			GameObject.Find ("Notre Voiture").SendMessage ("Lap");
-		}
-		else
-			GameObject.Find ("Notre Voiture").SendMessage ("Finish");
+        if (nbrtour == 0)
+        {
+            GameObject.Find("carfast1").SendMessage("Begin");
+            GameObject.Find("carfast1").SendMessage("Lap");
+        }
+        else
+        {
+            if (nbrtour == 3)
+            {
+                GameObject.Find("carfast1").SendMessage("Finish");
+            }
+            else
+                GameObject.Find("carfast1").SendMessage("Lap");
+        }
+        nbrtour += 1;
 
-
-	}
+    }
 }

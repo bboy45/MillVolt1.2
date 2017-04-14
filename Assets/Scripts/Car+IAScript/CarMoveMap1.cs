@@ -5,7 +5,7 @@ public class CarMoveMap1 : MonoBehaviour {
 
     float accelerationx;
     float decelerationx;
-    bool inter = true;
+    bool colbg;
 
     // Use this for initialization
     public void Start()
@@ -15,46 +15,37 @@ public class CarMoveMap1 : MonoBehaviour {
         
     }
 
-    //public void OnCollisionEnter(Collision col)
-    //{
-    //    //if (col.gameObject.name == "Terrain")
-    //    //{
-    //    //    inter = true;
-    //    //}
-    //    if (col.gameObject.name == "BXC departure" || col.gameObject.name == "BXC arrival" || col.gameObject.name == "BXC LS" || col.gameObject.name == "BXC RS")
-    //    {
-    //        inter = true;
-    //        accelerationx = 0.02f;
-    //        decelerationx = -0.02f;
-    //    }
-    //}
-
-    //public void OnCollisionExit(Collision col)
-    //{
-    //    //if (col.gameObject.name == "Terrain")
-    //    //{
-    //    //    inter = false;
-    //    //}
-    //}
-
-    // Update is called once per frame
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "GameObject 1" || collision.gameObject.name == "GameObject 2" || collision.gameObject.name == "GameObject 3" || collision.gameObject.name == "GameObject 4" || collision.gameObject.name == "GameObject 5" || collision.gameObject.name == "GameObject 6" || collision.gameObject.name == "GameObject 7" || collision.gameObject.name == "GameObject 8")
+        {
+            colbg = true;
+        }
+    }
+    public void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.name == "GameObject 1" || collision.gameObject.name == "GameObject 2" || collision.gameObject.name == "GameObject 3" || collision.gameObject.name == "GameObject 4" || collision.gameObject.name == "GameObject 5" || collision.gameObject.name == "GameObject 6" || collision.gameObject.name == "GameObject 7" || collision.gameObject.name == "GameObject 8")
+        {
+            colbg = false;
+        }
+    }
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow) && inter && transform.rotation.x > -25 && transform.rotation.x < 25)
+        if (Input.GetKey(KeyCode.UpArrow) && transform.rotation.x > -25 && transform.rotation.x < 25)
         {
-            if (accelerationx < 2.7f)
+            if (accelerationx < 1.8f)
             {
                 accelerationx += 0.02f;
             }
         }
-        if (Input.GetKey(KeyCode.DownArrow) && inter && transform.rotation.x > -25 && transform.rotation.x < 25)
+        if (Input.GetKey(KeyCode.DownArrow) && transform.rotation.x > -25 && transform.rotation.x < 25)
         {
             if (decelerationx > -2f)
             {
                 decelerationx -= 0.02f;
             }
         }
-        if (Input.GetKey(KeyCode.LeftArrow) && inter)
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
 
             transform.Rotate(0, -4f, 0);
@@ -68,7 +59,7 @@ public class CarMoveMap1 : MonoBehaviour {
             }
             else { transform.Translate(decelerationx, 0, 0); }
         }
-        if (Input.GetKey(KeyCode.RightArrow) && inter)
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(0, 4f, 0);
             if (accelerationx + decelerationx > 0.2f)
@@ -105,6 +96,11 @@ public class CarMoveMap1 : MonoBehaviour {
         if (transform.rotation.z < -35)
         {
             transform.Rotate(0, 0, 5);
+        }
+        if (colbg)
+        {
+            accelerationx = 0;
+            decelerationx = 0;
         }
         Physics.gravity = new Vector3(0, -160, 0);
 

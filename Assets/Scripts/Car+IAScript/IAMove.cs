@@ -22,7 +22,7 @@ public class IAMove : MonoBehaviour {
             if (dist > minDist)
             {
                 Move();
-                if (accelerationx < 140f)
+                if (accelerationx < 120f)
                     accelerationx = accelerationx + 1f;
             }
             else
@@ -52,6 +52,5 @@ public class IAMove : MonoBehaviour {
         gameObject.transform.LookAt(waypoints[num].transform.position);
         gameObject.transform.position += gameObject.transform.forward * accelerationx * Time.deltaTime;
         transform.Rotate(0, 270, 0);
-
     }
 }

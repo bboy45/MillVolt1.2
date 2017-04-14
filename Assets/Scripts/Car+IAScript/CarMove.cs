@@ -39,7 +39,7 @@ public class CarMove : MonoBehaviour {
     void Update () {
         if (Input.GetKey(KeyCode.UpArrow) && inter && transform.rotation.x > -25 && transform.rotation.x < 25)
         {
-            if (accelerationx < 2.7f)
+            if (accelerationx < 2.1f)
             {
                 accelerationx += 0.02f;
             }
