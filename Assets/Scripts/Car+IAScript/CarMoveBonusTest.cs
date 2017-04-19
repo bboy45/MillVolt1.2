@@ -15,8 +15,11 @@ public class CarMoveBonusTest : MonoBehaviour
     float kph;
     string speednumber;
     public Text speed;
+<<<<<<< HEAD
 	bool startleurre = false;
 	float leurretime;
+=======
+>>>>>>> origin/master
     // Use this for initialization
     public void Start()
     {
@@ -51,12 +54,22 @@ public class CarMoveBonusTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
 		if (startgenerateur) {
 			if (Time.time - generateurtime - 5 < 0) {
 				startgenerateur = false;
 				generateurtime = 0;
 			}
 		}
+=======
+            if (Time.time - generateurtime - 5 < 0)
+            {
+
+                startgenerateur = false;
+                generateurtime = 0;
+            }
+            
+>>>>>>> origin/master
         
         if (startfoudre) {
             if (Time.time - foudretime <= 3)
@@ -70,6 +83,7 @@ public class CarMoveBonusTest : MonoBehaviour
                 foudretime = 0;
             }
         }
+<<<<<<< HEAD
 		if (startleurre) {
 			if (Time.time - foudretime <= 4) {
 				transform.Translate (0, 3, 0);
@@ -99,10 +113,41 @@ public class CarMoveBonusTest : MonoBehaviour
 
 				transform.Rotate (0, -4f, 0);
 				/*if (accelerationx + decelerationx > 0.2f)
+=======
+        if (Input.GetKey(KeyCode.UpArrow) && inter && transform.rotation.x > -25 && transform.rotation.x < 25)
+        {
+
+            if (startgenerateur)
+            {
+
+                accelerationx += 5f;
+            }
+            else
+            {
+                if (accelerationx < 2.1f)
+                {
+                    accelerationx += 0.02f;
+                }
+            }
+        }
+        if (Input.GetKey(KeyCode.DownArrow) && inter && transform.rotation.x > -25 && transform.rotation.x < 25)
+        {
+            if (decelerationx > -2f)
+            {
+                decelerationx -= 0.02f;
+            }
+        }
+        if (Input.GetKey(KeyCode.LeftArrow) && inter)
+        {
+
+            transform.Rotate(0, -4f, 0);
+            /*if (accelerationx + decelerationx > 0.2f)
+>>>>>>> origin/master
             {
 
             }
             else */
+<<<<<<< HEAD
 				if (accelerationx + decelerationx <= 0.2f) {
 					transform.Translate (0.4f, 0, 0);
 				} else {
@@ -111,11 +156,26 @@ public class CarMoveBonusTest : MonoBehaviour
 			}
 			if (Input.GetKey (KeyCode.RightArrow) && inter) {
 				transform.Rotate (0, 4f, 0); /*
+=======
+            if (accelerationx + decelerationx <= 0.2f)
+            {
+                transform.Translate(0.4f, 0, 0);
+            }
+            else
+            {
+                transform.Translate(decelerationx, 0, 0);
+            }
+        }
+        if (Input.GetKey(KeyCode.RightArrow) && inter)
+        {
+            transform.Rotate(0, 4f, 0); /*
+>>>>>>> origin/master
             if (accelerationx + decelerationx > 0.2f)
             {
 
             }
             else */
+<<<<<<< HEAD
 				if (accelerationx + decelerationx <= 0.2f) {
 					transform.Translate (0.4f, 0, 0);
 				} else {
@@ -123,6 +183,16 @@ public class CarMoveBonusTest : MonoBehaviour
 				}
 			}
 		} 
+=======
+            if (accelerationx + decelerationx <= 0.2f)
+            {
+                transform.Translate(0.4f, 0, 0);
+            }
+            else {
+                transform.Translate(decelerationx, 0, 0);
+            }
+        }
+>>>>>>> origin/master
         if (accelerationx > 0)
         {
             accelerationx -= 0.006f;
@@ -153,7 +223,16 @@ public class CarMoveBonusTest : MonoBehaviour
         speednumber = kph.ToString();
         speed.text = speednumber + " KM/H";
     }
+<<<<<<< HEAD
    
+=======
+    public void Generateur()
+    {
+        startgenerateur = true;
+        generateurtime = Time.time;
+        accelerationx += 5f;
+    }
+>>>>>>> origin/master
     public void Foudre() {
         startfoudre = true;
         accelerationx = 0;
@@ -162,6 +241,7 @@ public class CarMoveBonusTest : MonoBehaviour
 
     }
     public void Leurre() {
+<<<<<<< HEAD
         //transform.position = new Vector3(transform.position.x, 40, transform.position.z);
         //faire sauter la voiture pas TP.
         accelerationx = 0;
@@ -177,4 +257,12 @@ public class CarMoveBonusTest : MonoBehaviour
 		generateurtime = Time.time;
 		accelerationx += 5f;
 	}
+=======
+        transform.position = new Vector3(transform.position.x, 40, transform.position.z);
+        //faire sauter la voiture pas TP.
+        accelerationx = 0;
+        decelerationx = 0;
+        
+    }
+>>>>>>> origin/master
 }
