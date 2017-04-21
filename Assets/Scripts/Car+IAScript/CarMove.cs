@@ -15,7 +15,7 @@ public class CarMove : MonoBehaviour {
 	
     public void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Terrain")
+        if (col.gameObject.name == "arena1.1")
         {
             inter = true;
         }
@@ -29,7 +29,7 @@ public class CarMove : MonoBehaviour {
 
     public void OnCollisionExit(Collision col)
     {
-        if (col.gameObject.name == "Terrain")
+        if (col.gameObject.name == "arena1.1")
         {
             inter = false;
         }
