@@ -21,7 +21,7 @@ public class CarMoveBonusTest : MonoBehaviour
     {
         accelerationx = 0.04f;
         decelerationx = -0.04f;
-        transform.position = new Vector3(12, 1, 250);
+        //transform.position = new Vector3(12, 1, 250);
        
        
     }
@@ -70,7 +70,7 @@ public class CarMoveBonusTest : MonoBehaviour
                 foudretime = 0;
             }
         }
-        if (Input.GetKey(KeyCode.UpArrow) && inter && transform.rotation.x > -25 && transform.rotation.x < 25)
+        if (Input.GetKey(KeyCode.UpArrow)  && transform.rotation.x > -25 && transform.rotation.x < 25)
         {
 
             if (startgenerateur)
@@ -89,7 +89,7 @@ public class CarMoveBonusTest : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKey(KeyCode.DownArrow) && inter && transform.rotation.x > -25 && transform.rotation.x < 25)
+        if (Input.GetKey(KeyCode.DownArrow)  && transform.rotation.x > -25 && transform.rotation.x < 25)
         {
             if (decelerationx > -2f)
             {
@@ -100,7 +100,7 @@ public class CarMoveBonusTest : MonoBehaviour
                 kph2 -= 2;
             }
         }
-        if (Input.GetKey(KeyCode.LeftArrow) && inter)
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
 
             transform.Rotate(0, -4f, 0);
@@ -118,7 +118,7 @@ public class CarMoveBonusTest : MonoBehaviour
                 transform.Translate(decelerationx, 0, 0);
             }
         }
-        if (Input.GetKey(KeyCode.RightArrow) && inter)
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(0, 4f, 0); /*
             if (accelerationx + decelerationx > 0.2f)
@@ -184,7 +184,7 @@ public class CarMoveBonusTest : MonoBehaviour
         }
         
     }
-    public void Generateur()
+    /*public void Generateur()
     {
         startgenerateur = true;
         generateurtime = Time.time;
@@ -203,5 +203,5 @@ public class CarMoveBonusTest : MonoBehaviour
         accelerationx = 0;
         decelerationx = 0;
         
-    }
+    }*/
 }
