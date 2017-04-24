@@ -10,7 +10,7 @@ public class carmovearena : MonoBehaviour {
 	public void Start () {
 		accelerationx = 0.04f;
 		decelerationx = -0.04f;
-		//transform.position = new Vector3(12, 1, 250);
+		transform.position = new Vector3(12, 1, 250);
 	}
 
 	public void OnCollisionEnter(Collision col)
