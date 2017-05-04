@@ -16,17 +16,17 @@ public class setarrival2 : MonoBehaviour {
 	public void OnTriggerEnter(Collider other){
         if (nbrtour == 0)
         {
-            GameObject.Find("carfast1").SendMessage("Begin");
-            GameObject.Find("carfast1").SendMessage("Lap");
+            GameObject.Find("Notre Voiture").SendMessage("Begin");
+            GameObject.Find("Notre Voiture").SendMessage("Lap");
         }
         else
         {
             if (nbrtour == 3)
             {
-                GameObject.Find("carfast1").SendMessage("Finish");
+                GameObject.Find("Notre Voiture").SendMessage("Finish");
             }
             else
-                GameObject.Find("carfast1").SendMessage("Lap");
+                GameObject.Find("Notre Voiture").SendMessage("Lap");
         }
         nbrtour += 1;
 
